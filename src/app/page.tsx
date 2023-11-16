@@ -26,8 +26,9 @@ export default function Home() {
           </p>
         </header>
         <div className="mx-auto flex max-w-7xl flex-col md:flex-row md:items-end">
-          <p className="mx-auto mb-10 bg-gradient-to-r from-primary to-secundary bg-clip-text text-3xl font-bold text-transparent md:text-7xl">
-            Uma década <br /> transformando <br /> sorrisos e <br /> vidas.
+          <p className="mx-auto mb-10 mt-24 bg-gradient-to-r from-primary to-secundary bg-clip-text text-center text-xl font-bold text-transparent md:text-7xl">
+            Uma década <br className="hidden md:block" /> transformando <br />{' '}
+            sorrisos e <br className="hidden md:block" /> vidas.
           </p>
           <div>
             <Image
@@ -50,18 +51,23 @@ export default function Home() {
             width={672}
             height={605}
           />
-          <p className="mb-10 mt-4 w-72 text-center text-xl font-bold text-white md:w-auto md:text-left md:text-5xl">
-            Próteses <br className="hidden md:block" /> e implantes
-            <br className="hidden md:block" /> sendo feitos
-            <br className="hidden md:block" /> todos os{' '}
-            <br className="hidden md:block" />
-            dias.
-          </p>
-          <div className="hidden space-y-4 md:block">
-            <Image src="/1.svg" width={50} height={50} alt="" />
-            <Image src="/2.svg" width={50} height={50} alt="" />
-            <Image src="/3.svg" width={50} height={50} alt="" />
-            <Image src="/4.svg" width={50} height={50} alt="" />
+          <div>
+            <div className="flex items-center justify-around">
+              <p className="mb-10 mt-4 w-72 text-center text-xl font-bold text-white md:w-auto md:text-left md:text-5xl">
+                Próteses <br className="hidden md:block" /> e implantes
+                <br className="hidden md:block" /> sendo feitos
+                <br className="hidden md:block" /> todos os{' '}
+                <br className="hidden md:block" />
+                dias.
+              </p>
+              <div className="hidden space-y-4 md:block">
+                <Image src="/1.svg" width={50} height={50} alt="" />
+                <Image src="/2.svg" width={50} height={50} alt="" />
+                <Image src="/3.svg" width={50} height={50} alt="" />
+                <Image src="/4.svg" width={50} height={50} alt="" />
+              </div>
+            </div>
+            <Contact />
           </div>
         </div>
       </div>
