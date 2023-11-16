@@ -1,4 +1,5 @@
 import { Contact } from '@/components/contact'
+import { Video } from '@/components/video'
 import { Phone } from 'lucide-react'
 import Image from 'next/image'
 
@@ -68,6 +69,34 @@ export default function Home() {
               </div>
             </div>
             <Contact />
+          </div>
+        </div>
+      </div>
+      <div className="px-6 py-20">
+        <div className="mx-auto mt-64 flex max-w-7xl flex-col items-center gap-7 rounded-lg bg-gradient-to-tl from-[#68B936] to-[#014222] md:mt-0 md:h-[450px] md:flex-row">
+          <Video />
+          <div className="my-6 space-y-4 px-6 font-bold text-white md:w-[748px]">
+            <p>
+              São mais de 10 anos desde o sonho inicial de ter o melhor
+              atendimento na área odontológica. Tudo começou pela atitude de
+              três irmãos, nascidos no Maranhão que perceberam que o diferencial
+              na área é o cuidar e acolher.
+            </p>
+            <p>
+              Tratando cada paciente com humanidade e direcionamento a notícia
+              se espalhou. De uma, nasceu outra e hoje a marca está espalhada
+              nos melhores bairros nos Estados do Maranhão e Ceará.
+            </p>
+            <p>
+              O atendimento e a responsabilidade ética são base sólidas e
+              alicerces para que a empresa cresça e se mantenha cada vez mais
+              forte no mercado
+            </p>
+            <p>
+              Com competência e determinação a equipe de sucesso da Medical
+              Odonto é formada por profissionais eficientes e qualificados. O
+              melhor atendimento do Brasil é real e você encontra aqui.
+            </p>
           </div>
         </div>
       </div>
