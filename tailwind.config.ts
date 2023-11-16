@@ -8,6 +8,14 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: 'var(--font-poppins)',
+        ptSansCaption: 'var(--font-ptSansCaption)',
+      },
+      colors: {
+        primary: '#00A85A',
+        secundary: '#0153A7',
+      },
     },
   },
   plugins: [],

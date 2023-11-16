@@ -1,4 +1,17 @@
+import { PT_Sans_Caption as PTSansCaption, Poppins } from 'next/font/google'
 import './globals.css'
+
+const poppins = Poppins({
+  weight: ['400', '600', '700'],
+  subsets: ['latin'],
+  variable: '--font-poppins',
+})
+
+const ptSansCaption = PTSansCaption({
+  weight: ['400', '700'],
+  subsets: ['latin'],
+  variable: '--font-ptSansCaption',
+})
 
 export default function RootLayout({
   children,
@@ -6,7 +19,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="pt-BR">
+    <html
+      className={`${poppins.variable} ${ptSansCaption.variable}`}
+      lang="pt-BR"
+    >
       <body>{children}</body>
     </html>
   )
