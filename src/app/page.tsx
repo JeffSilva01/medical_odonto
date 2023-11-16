@@ -7,7 +7,7 @@ export default function Home() {
     <div className="h-screen">
       <div className="relative h-1/2 w-full">
         <Image
-          className="-z-10 object-cover"
+          className="-z-10 object-cover opacity-50"
           src="/background.png"
           alt=""
           fill
@@ -26,7 +26,7 @@ export default function Home() {
           </p>
         </header>
         <div className="mx-auto flex max-w-7xl flex-col md:flex-row md:items-end">
-          <p className="mx-auto mb-10 mt-24 bg-gradient-to-r from-primary to-secundary bg-clip-text text-center text-xl font-bold text-transparent md:text-7xl">
+          <p className="mx-auto mb-10 mt-24 bg-gradient-to-r from-primary to-secundary bg-clip-text text-center text-xl font-bold text-transparent md:ml-0 md:mt-0 md:text-left md:text-6xl">
             Uma década <br className="hidden md:block" /> transformando <br />{' '}
             sorrisos e <br className="hidden md:block" /> vidas.
           </p>
