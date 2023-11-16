@@ -5,7 +5,7 @@ import Image from 'next/image'
 export default function Home() {
   return (
     <div className="h-screen">
-      <div className="relative h-1/2 w-full">
+      <div className="relative w-full pb-8">
         <Image
           className="-z-10 object-cover opacity-50"
           src="/background.png"
@@ -43,9 +43,9 @@ export default function Home() {
         </div>
       </div>
       <div className="bg-primary">
-        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between md:flex-row">
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between py-8 md:flex-row">
           <Image
-            className="mt-24 w-96 md:mt-0 md:w-[550px] md:-translate-y-10"
+            className="w-96 md:w-[550px] md:-translate-y-16"
             src="/prova-social.png"
             alt=""
             width={672}
