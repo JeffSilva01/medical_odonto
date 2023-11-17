@@ -44,6 +44,7 @@ export function Contact() {
         </div>
         <a
           className="flex w-full items-center justify-center whitespace-nowrap rounded bg-secundary px-2 py-3 text-white md:w-fit"
+          id="whatsapp"
           target="_blank"
           href={`https://wa.me/558596120225?text=${whatsappMessage}`}
         >
