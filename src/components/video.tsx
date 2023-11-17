@@ -18,11 +18,7 @@ export function Video() {
 
   return (
     <div className="relative -mt-72 md:mt-0">
-      <video
-        ref={videoRef}
-        src="/video.mp4"
-        className="h-[550px] w-[300px]"
-      ></video>
+      <video width={300} height={550} ref={videoRef} src="/video.mp4"></video>
       <button
         onClick={handlerPlay}
         className="absolute bottom-0 left-0 right-0 top-0 flex items-center justify-center "
