@@ -18,7 +18,11 @@ export function Video() {
 
   return (
     <div className="relative -mt-72 md:mt-0">
-      <video width={300} height={550} ref={videoRef} src="/video.mp4"></video>
+      <video width={300} height={550} src="/video.webm" ref={videoRef}>
+        <source src="/video.ogg" type="video/ogg" />
+        <source src="/video.mp4" type="video/mp4" />
+        <source src="/video.webm" type="video/webm" />
+      </video>
       <button
         onClick={handlerPlay}
         className="absolute bottom-0 left-0 right-0 top-0 flex items-center justify-center "
