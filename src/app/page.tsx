@@ -2,10 +2,21 @@ import { Contact } from '@/components/contact'
 import { Video } from '@/components/video'
 import { Phone } from 'lucide-react'
 import Image from 'next/image'
+import Script from 'next/script'
 
 export default function Home() {
   return (
     <div className="h-screen">
+      <Script src="https://www.googletagmanager.com/gtag/js?id=GTM-PCWRZKN8" />
+      <Script id="google-analytics">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+ 
+          gtag('config', 'GTM-PCWRZKN8');
+        `}
+      </Script>
       <div className="relative w-full pb-8">
         <Image
           className="-z-10 object-cover opacity-50"
