@@ -10,7 +10,7 @@ export function Contact() {
 
   return (
     <div className="mx-auto w-80 rounded bg-white p-4 md:w-[671px] ">
-      <p className="mb-4 text-xl text-primary">Agente uma consulta</p>
+      <p className="mb-4 text-xl text-primary">Agende uma consulta</p>
       <div className="flex flex-col items-center gap-2 md:flex-row">
         <div className="flex h-12 items-center gap-2 rounded border p-2">
           <div className="flex h-6 w-6 items-center justify-center rounded-full bg-primary/20">
