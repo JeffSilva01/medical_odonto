@@ -1,4 +1,5 @@
 import { PT_Sans_Caption as PTSansCaption, Poppins } from 'next/font/google'
+import { GoogleAnalytics } from '@next/third-parties/google'
 import './globals.css'
 
 const poppins = Poppins({
@@ -24,6 +25,7 @@ export default function RootLayout({
       lang="pt-BR"
     >
       <body>{children}</body>
+      <GoogleAnalytics gaId="GTM-NL2SQWS9" />
     </html>
   )
 }
